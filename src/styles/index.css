@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/HelveticaLTStdBold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  src: url('./fonts/NanumMyeongjo.otf');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-page-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 15px 15%;
+
+  background-color: #efff00;
+  color: rgb(1, 62, 47);
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 13vw;
+  letter-spacing: -10px;
+}
+
+.timer-info-wrapper:nth-child(1) {
+  font-size: 12vw;
+}
+
+.timer-info-wrapper {
+  height: 11vw;
+  text-align: center;
+}
+
+.timer-info-wrapper .min {
+  color: rgb(255, 84, 111);
+}
+
+.timer-info-wrapper .sec {
+  color: rgb(14, 238, 184);
+}
+
+.move-down-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.result-page-wrapper .title {
+  font-family: 'NanumMyeongjo', sans-serif;
+  font-size: 30px;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
